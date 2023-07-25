@@ -1,0 +1,14 @@
+{% extends 'Temp_enroll/base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-8 offset-2">
+    <h4 class="alert alert-info text-center">Update Student Data</h4>
+    <form action="" method="post">
+     {% csrf_token %}
+     {{form.as_p}}
+     <input type="submit" value="Update" class="btn btn-outline-success">
+     <a href="/" class="btn btn-outline-info">Home</a>
+    </form>
+    </div>
+</div>
+{% endblock content %}
